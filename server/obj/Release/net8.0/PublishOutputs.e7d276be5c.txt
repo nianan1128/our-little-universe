@@ -1,0 +1,6 @@
+C:\Users\NianAn\Documents\deepseek-harness\default-workspace\render-publish\CoupleSpace.Server.exe
+C:\Users\NianAn\Documents\deepseek-harness\default-workspace\render-publish\data\state.json
+C:\Users\NianAn\Documents\deepseek-harness\default-workspace\render-publish\CoupleSpace.Server.dll
+C:\Users\NianAn\Documents\deepseek-harness\default-workspace\render-publish\CoupleSpace.Server.deps.json
+C:\Users\NianAn\Documents\deepseek-harness\default-workspace\render-publish\CoupleSpace.Server.runtimeconfig.json
+C:\Users\NianAn\Documents\deepseek-harness\default-workspace\render-publish\CoupleSpace.Server.pdb

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: our-little-universe
+    runtime: docker
+    plan: starter
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: DATA_DIR
+        value: /data
+      - key: COUPLE_KEY
+        sync: false
+    disk:
+      name: our-little-universe-data
+      mountPath: /data
+      sizeGB: 1

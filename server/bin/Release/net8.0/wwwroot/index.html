@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我们的小宇宙 · 情侣空间</title>
+  <meta name="description" content="一个只属于两个人的小宇宙：时光相册、心动小游戏、悄悄话和我们的日记。" />
+  <meta name="theme-color" content="#fdf4f5" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="paper-dots" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true">
+    <span style="--x:8%; --y:16%; --d:0s">♡</span>
+    <span style="--x:90%; --y:10%; --d:1.2s">♡</span>
+    <span style="--x:78%; --y:42%; --d:.6s">✧</span>
+    <span style="--x:14%; --y:64%; --d:1.8s">✧</span>
+    <span style="--x:94%; --y:74%; --d:.9s">♡</span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="我们的小宇宙">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-bunny"></use></svg>
+      </span>
+      <span class="brand-text">
+        <strong>我们的小宇宙</strong>
+        <small>our little universe</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#album" data-nav="album">时光相册</a>
+      <a href="#games" data-nav="games">心动小游戏</a>
+      <a href="#whisper" data-nav="whisper">悄悄话</a>
+      <a href="#diary" data-nav="diary">我们的日记</a>
+      <a href="#dates" data-nav="dates">纪念日</a>
+      <a href="#wishes" data-nav="wishes">心愿</a>
+    </nav>
+
+    <button class="chip-button" id="customizeBtn" type="button">
+      定制我们的故事 <span aria-hidden="true">↗</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO / LETTER -->
+    <section class="hero" id="top">
+      <div class="letter-card reveal">
+        <span class="washi tape-tl" aria-hidden="true"></span>
+        <span class="washi tape-tr" aria-hidden="true"></span>
+
+        <div class="card-bow" aria-hidden="true">
+          <svg viewBox="0 0 64 48"><use href="#icon-bow"></use></svg>
+        </div>
+        <div class="card-heart" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#icon-heart"></use></svg>
+        </div>
+
+        <p class="eyebrow">A LETTER FOR YOU</p>
+
+        <button class="envelope" id="openLetterBtn" type="button" aria-label="拆开这封信">
+          <span class="envelope-back"></span>
+          <span class="envelope-paper">
+            <span class="envelope-line"></span>
+            <span class="envelope-line short"></span>
+          </span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal">
+            <svg viewBox="0 0 24 24"><use href="#icon-heart"></use></svg>
+          </span>
+        </button>
+
+        <h1>有些话，只想说给你听</h1>
+        <p class="hero-copy">
+          生活很忙，但总有一个角落，<br />
+          留着我想对你说的话。
+        </p>
+        <button class="text-link" id="openLetterBtn2" type="button">拆开这封信 <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="hero-note" data-reveal>今天的喜欢，也有小狗帮忙保管 <span class="accent">♡</span></p>
+    </section>
+
+    <!-- 01 ALBUM -->
+    <section class="section album-section" id="album">
+      <div class="section-heading reveal">
+        <p class="kicker">01 / TIME ALBUM</p>
+        <h2>把喜欢的瞬间，夹进相册</h2>
+        <p>晴天或雨天，每个普通的日子，都值得被好好收藏。</p>
+      </div>
+
+      <div class="polaroid-row">
+        <figure class="polaroid tilt-left reveal">
+          <span class="washi tape-top" aria-hidden="true"></span>
+          <div class="photo">
+            <svg viewBox="0 0 220 170" role="img" aria-label="小熊抱着爱心">
+              <rect width="220" height="170" fill="#f4d8dc" />
+              <ellipse cx="110" cy="154" rx="72" ry="10" fill="#e8bfc6" opacity=".55" />
+              <g stroke="#38262d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="82" cy="56" r="14" fill="#fff" />
+                <circle cx="138" cy="56" r="14" fill="#fff" />
+                <path d="M70 92c0-27 18-40 40-40s40 13 40 40-18 48-40 48-40-21-40-48Z" fill="#fff" />
+                <ellipse cx="110" cy="104" rx="23" ry="18" fill="#fff" />
+                <path d="M101 96c0-3 2-5 6-5" fill="none" />
+                <path d="M113 91c4 0 6 2 6 5" fill="none" />
+                <circle cx="102" cy="84" r="3.2" fill="#38262d" stroke="none" />
+                <circle cx="118" cy="84" r="3.2" fill="#38262d" stroke="none" />
+                <path d="M105 91h10" fill="none" />
+                <path d="M128 113c9-15 28-12 28 5 0 13-19 24-19 24s-21-11-21-24c0-10 11-15 12-5Z" fill="#d96b7e" />
+              </g>
+            </svg>
+          </div>
+          <figcaption>把心意送给你</figcaption>
+        </figure>
+
+        <figure class="polaroid tilt-right reveal">
+          <span class="washi tape-top" aria-hidden="true"></span>
+          <div class="photo">
+            <svg viewBox="0 0 220 170" role="img" aria-label="草地上的小鸭">
+              <rect width="220" height="170" fill="#d9ecd0" />
+              <circle cx="176" cy="36" r="22" fill="#fff4c9" />
+              <ellipse cx="110" cy="70" rx="120" ry="48" fill="#c7e3b4" />
+              <ellipse cx="50" cy="150" rx="120" ry="55" fill="#b6d99f" />
+              <g stroke="#38262d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="104" cy="112" rx="42" ry="27" fill="#fff" />
+                <path d="M134 100c10 2 18 9 18 14s-10 8-20 0" fill="#fff" />
+                <ellipse cx="154" cy="104" rx="9" ry="5" fill="#f2a93b" />
+                <circle cx="144" cy="92" r="17" fill="#fff" />
+                <circle cx="140" cy="89" r="2.6" fill="#38262d" stroke="none" />
+                <path d="M128 88c10-10 18-9 26 0" fill="none" />
+                <path d="M76 136l-12 18M96 138l-4 18" fill="none" />
+              </g>
+              <g stroke="#7da968" stroke-width="3" stroke-linecap="round">
+                <path d="M182 120c6-10 12-12 18-8M24 118c-6-8-10-9-15-6" />
+              </g>
+            </svg>
+          </div>
+          <figcaption>快乐要一起分享</figcaption>
+        </figure>
+
+        <figure class="polaroid tilt-left-soft reveal">
+          <span class="washi tape-top" aria-hidden="true"></span>
+          <div class="photo">
+            <svg viewBox="0 0 220 170" role="img" aria-label="夜晚一起看星星的小熊">
+              <rect width="220" height="170" fill="#2e3654" />
+              <g fill="#fff4c9">
+                <circle cx="38" cy="34" r="2" /><circle cx="70" cy="22" r="1.4" />
+                <circle cx="150" cy="28" r="1.8" /><circle cx="188" cy="52" r="1.2" />
+                <circle cx="112" cy="44" r="1.2" /><circle cx="24" cy="70" r="1.4" />
+              </g>
+              <circle cx="176" cy="34" r="15" fill="#fff0b8" />
+              <path d="M0 132c40-22 80-20 110-8 34 14 70 8 110-6v52H0Z" fill="#3f4a70" />
+              <g stroke="#1f2538" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="92" cy="112" r="16" fill="#f7f1e8" />
+                <circle cx="80" cy="98" r="5" fill="#f7f1e8" />
+                <circle cx="104" cy="98" r="5" fill="#f7f1e8" />
+                <circle cx="126" cy="116" r="14" fill="#f7f1e8" />
+                <circle cx="116" cy="104" r="4.5" fill="#f7f1e8" />
+                <circle cx="136" cy="104" r="4.5" fill="#f7f1e8" />
+              </g>
+              <circle cx="154" cy="136" r="4" fill="#f7df8f" />
+              <circle cx="170" cy="144" r="2.5" fill="#f7df8f" />
+            </svg>
+          </div>
+          <figcaption>晚安，也想你</figcaption>
+        </figure>
+
+        <button class="add-photo reveal" id="addPhotoBtn" type="button">
+          <span class="plus">＋</span>
+          <span>添加一张照片</span>
+          <small>把今天也夹进相册</small>
+        </button>
+        <input type="file" id="photoInput" accept="image/*" hidden />
+      </div>
+    </section>
+
+    <!-- 02 GAMES + LETTER PREVIEW -->
+    <section class="section duo-section" id="games">
+      <div class="game-card card reveal">
+        <p class="kicker">02 / LITTLE JOYS</p>
+        <h2>默契，从心动开始</h2>
+        <p class="section-copy">翻开小卡片，把散落的美好配成一对。</p>
+
+        <div class="game-bar">
+          <span id="moveCount">0 次翻牌</span>
+          <span id="pairCount">0 / 6 对</span>
+          <button id="restartGame" class="mini-button" type="button">重新开始 ↻</button>
+        </div>
+
+        <div class="memory-grid" id="memoryGrid" aria-label="翻牌配对游戏"></div>
+        <p class="game-hint" id="gameHint">找到 6 对，就解锁一句悄悄话。</p>
+      </div>
+
+      <aside class="mini-letter card reveal">
+        <span class="washi tape-tl" aria-hidden="true"></span>
+        <div class="card-bow small" aria-hidden="true">
+          <svg viewBox="0 0 64 48"><use href="#icon-bow"></use></svg>
+        </div>
+        <div class="card-heart small" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#icon-heart"></use></svg>
+        </div>
+        <p class="eyebrow">A LETTER FOR YOU</p>
+        <div class="mini-envelope" aria-hidden="true">
+          <span></span>
+        </div>
+        <h3>有些话，<br />只想说给你听</h3>
+        <p>生活很忙，但总有一个角落，<br />留着我想对你说的话。</p>
+        <button class="text-link" id="miniLetterBtn" type="button">拆开这封信 →</button>
+      </aside>
+    </section>
+
+    <!-- 03 WHISPER -->
+    <section class="section whisper-section" id="whisper">
+      <div class="section-heading reveal">
+        <p class="kicker">03 / DEAR YOU</p>
+        <h2>把想念留在这里</h2>
+        <p>一句晚安，一件小事，一点想你的证据。</p>
+      </div>
+
+      <div class="whisper-layout">
+        <form class="whisper-form card reveal" id="whisperForm">
+          <label class="field">
+            <span>你的昵称</span>
+            <input type="text" id="whisperName" maxlength="12" placeholder="你的昵称" autocomplete="nickname" />
+          </label>
+          <label class="field">
+            <span>今天，有什么想对 TA 说的？</span>
+            <textarea id="whisperText" maxlength="300" rows="5" placeholder="今天，有什么想对 TA 说的？"></textarea>
+          </label>
+          <div class="form-foot">
+            <span id="whisperCount">0 / 300</span>
+            <button class="primary-button" type="submit">寄出这句悄悄话 <span aria-hidden="true">♡</span></button>
+          </div>
+        </form>
+
+        <div class="whisper-wall reveal">
+          <div class="wall-title">
+            <span>DEAR YOU · 悄悄话墙</span>
+            <span id="whisperTotal">0 句</span>
+          </div>
+          <div class="whisper-list" id="whisperList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 DIARY -->
+    <section class="section diary-section" id="diary">
+      <div class="section-heading diary-heading reveal">
+        <div>
+          <p class="kicker">04 / OUR DIARY</p>
+          <h2>把今天，写成我们的故事</h2>
+          <p>晴天或雨天，每个普通的日子都值得一页。</p>
+        </div>
+        <button class="primary-button" id="writeDiaryBtn" type="button">＋ 写一篇日记</button>
+      </div>
+
+      <div class="diary-book card reveal">
+        <div class="diary-book-head">
+          <span>DEAR DIARY <span class="accent">♡</span></span>
+          <span id="diaryCount">已记录 0 篇</span>
+        </div>
+        <div class="diary-list" id="diaryList"></div>
+        <div class="diary-signature">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-bunny"></use></svg>
+          <span>和你有关的小事，都想好好记住。</span>
+        </div>
+      </div>
+      <p class="storage-note">日记会保存在你们的空间里，随时可以回来翻看。</p>
+    </section>
+
+    <!-- 05 DATES -->
+    <section class="section dates-section" id="dates">
+      <div class="section-heading diary-heading reveal">
+        <div>
+          <p class="kicker">05 / OUR DAYS</p>
+          <h2>把重要的日子，放在心尖上</h2>
+          <p>纪念日、生日、下一次见面，都值得认真倒数。</p>
+        </div>
+        <button class="primary-button" id="addDateBtn" type="button">＋ 添加纪念日</button>
+      </div>
+
+      <div class="date-grid" id="dateGrid"></div>
+    </section>
+
+    <!-- 06 WISHES -->
+    <section class="section wishes-section" id="wishes">
+      <div class="section-heading reveal">
+        <p class="kicker">06 / OUR WISHES</p>
+        <h2>想和你一起，做完这些小事</h2>
+        <p>不用很宏大，只要和你一起，就都值得期待。</p>
+      </div>
+
+      <div class="wish-card card reveal">
+        <div class="wish-head">
+          <span>TOGETHER LIST · 一起完成的小事</span>
+          <span id="wishProgressText">0 / 0</span>
+        </div>
+        <div class="wish-progress" aria-hidden="true">
+          <span id="wishProgressBar"></span>
+        </div>
+
+        <form class="wish-add" id="wishForm">
+          <input type="text" id="wishInput" maxlength="60" placeholder="比如：一起去看一次海" autocomplete="off" />
+          <button class="primary-button" type="submit">＋ 加进清单</button>
+        </form>
+
+        <ul class="wish-list" id="wishList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bunny" aria-hidden="true">
+      <svg viewBox="0 0 48 48"><use href="#icon-bunny"></use></svg>
+    </div>
+    <p class="footer-line">和你有关的小事，都想好好记住。</p>
+    <p class="footer-names" id="footerNames">小宇宙 · 两个人</p>
+    <div class="footer-data">
+      <button class="mini-button" id="exportBtn" type="button">导出备份</button>
+      <button class="mini-button" id="importBtn" type="button">导入备份</button>
+      <input type="file" id="importInput" accept=".json,application/json" hidden />
+    </div>
+    <p class="footer-made">Made with <span class="accent">♡</span> for our little universe</p>
+  </footer>
+
+  <button class="theme-fab" id="themeFab" type="button" aria-label="给小宇宙换个颜色">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-palette"></use></svg>
+  </button>
+
+  <!-- THEME MODAL -->
+  <div class="modal" id="themeModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="themeTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card theme-modal-card">
+      <button class="modal-close" type="button" data-close aria-label="关闭">×</button>
+      <p class="eyebrow">A LITTLE CHANGE OF MOOD</p>
+      <h2 id="themeTitle">给小宇宙换个颜色</h2>
+      <p class="modal-copy">像换一张信纸，让今天也清新一点。</p>
+      <p class="modal-label">挑选你喜欢的色卡</p>
+      <div class="theme-grid" id="themeGrid">
+        <button class="theme-card" data-theme="pink" type="button">
+          <span class="theme-swatch pink"></span>
+          <span class="theme-name">奶油粉</span>
+          <span class="theme-tag">温柔的心动</span>
+          <span class="theme-check">✓</span>
+        </button>
+        <button class="theme-card" data-theme="mint" type="button">
+          <span class="theme-swatch mint"></span>
+          <span class="theme-name">薄荷绿</span>
+          <span class="theme-tag">微风穿过森林</span>
+          <span class="theme-check">✓</span>
+        </button>
+        <button class="theme-card" data-theme="sky" type="button">
+          <span class="theme-swatch sky"></span>
+          <span class="theme-name">晴空蓝</span>
+          <span class="theme-tag">收集一片晴天</span>
+          <span class="theme-check">✓</span>
+        </button>
+        <button class="theme-card" data-theme="butter" type="button">
+          <span class="theme-swatch butter"></span>
+          <span class="theme-name">奶油黄</span>
+          <span class="theme-tag">晒过太阳的日子</span>
+          <span class="theme-check">✓</span>
+        </button>
+        <button class="theme-card" data-theme="lavender" type="button">
+          <span class="theme-swatch lavender"></span>
+          <span class="theme-name">淡薰衣草</span>
+          <span class="theme-tag">做一朵柔软的梦</span>
+          <span class="theme-check">✓</span>
+        </button>
+      </div>
+      <p class="modal-hint">点击色卡即可预览，保存后两人都会看到。</p>
+      <div class="modal-actions">
+        <button class="primary-button" id="saveThemeBtn" type="button">保存这个颜色 ♡</button>
+        <button class="ghost-button" type="button" data-close>暂不更换</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIARY MODAL -->
+  <div class="modal" id="diaryModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="diaryModalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card diary-modal-card">
+      <button class="modal-close" type="button" data-close aria-label="关闭">×</button>
+      <h2 id="diaryModalTitle">写下今天的小美好</h2>
+      <form id="diaryForm">
+        <input type="hidden" id="diaryId" />
+        <div class="field-row">
+          <label class="field">
+            <span>日记日期</span>
+            <input type="date" id="diaryDate" required />
+          </label>
+          <label class="field">
+            <span>今天的心情</span>
+            <select id="diaryMood">
+              <option value="随心记录">随心记录</option>
+              <option value="想你">想你</option>
+              <option value="开心">开心</option>
+              <option value="安静">安静</option>
+              <option value="有点小情绪">有点小情绪</option>
+            </select>
+          </label>
+        </div>
+        <label class="field">
+          <span>日记标题</span>
+          <input type="text" id="diaryTitle" maxlength="60" placeholder="比如：和你一起散步的傍晚" required />
+        </label>
+        <label class="field">
+          <span>日记正文</span>
+          <textarea id="diaryBody" maxlength="10000" rows="8" placeholder="今天发生了什么？有哪些想记住的心情和小事……" required></textarea>
+        </label>
+        <div class="form-foot">
+          <span id="diaryCharCount">0 / 10000</span>
+          <div class="modal-actions inline">
+            <button class="primary-button" type="submit">保存这篇日记 ♡</button>
+            <button class="ghost-button" type="button" data-close>取消</button>
+          </div>
+        </div>
+        <p class="modal-hint">保存后可再次编辑，每篇最多 10,000 字。</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- LETTER MODAL -->
+  <div class="modal" id="letterModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card letter-modal-card">
+      <button class="modal-close" type="button" data-close aria-label="关闭">×</button>
+      <p class="eyebrow">A LETTER FOR YOU</p>
+      <h2 id="letterTitle">致 我亲爱的小朋友</h2>
+      <div class="letter-body">
+        <p>见字如面。</p>
+        <p>想把今天遇到的晚霞、路边的小猫、还有突然想起你时的那一下心跳，都装进这封信里寄给你。</p>
+        <p>生活有时候很忙，忙到忘了好好说一句晚安。但没关系，我们还有这个小宇宙，可以慢慢把想说的话存起来。</p>
+        <p>谢谢你愿意和我一起，把普通的日子过得很甜。</p>
+        <p class="letter-sign">—— 你的小宇宙 <span class="accent">♡</span></p>
+      </div>
+      <div class="modal-actions">
+        <button class="primary-button" type="button" data-close>把信收好 ♡</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOMIZE MODAL -->
+  <div class="modal" id="customizeModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="customizeTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card customize-modal-card">
+      <button class="modal-close" type="button" data-close aria-label="关闭">×</button>
+      <p class="eyebrow">OUR STORY</p>
+      <h2 id="customizeTitle">定制我们的故事</h2>
+      <p class="modal-copy">写下你们的名字和在一起的日子，这个小宇宙就只属于你们。</p>
+      <form id="customizeForm">
+        <div class="field-row">
+          <label class="field">
+            <span>你的名字</span>
+            <input type="text" id="yourName" maxlength="12" placeholder="比如：小宇" />
+          </label>
+          <label class="field">
+            <span>TA 的名字</span>
+            <input type="text" id="partnerName" maxlength="12" placeholder="比如：小宙" />
+          </label>
+        </div>
+        <label class="field">
+          <span>在一起的日子</span>
+          <input type="date" id="anniversary" />
+        </label>
+        <p class="modal-hint">信息会保存在你们的共享空间里，两台设备都能看到。</p>
+        <div class="modal-actions">
+          <button class="primary-button" type="submit">保存我们的故事 ♡</button>
+          <button class="ghost-button" type="button" data-close>先不写</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- DATE MODAL -->
+  <div class="modal" id="dateModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="dateModalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card date-modal-card">
+      <button class="modal-close" type="button" data-close aria-label="关闭">×</button>
+      <p class="eyebrow">OUR DAYS</p>
+      <h2 id="dateModalTitle">添加一个重要日子</h2>
+      <p class="modal-copy">把想记住的日子放进来，它会替你们倒数。</p>
+      <form id="dateForm">
+        <input type="hidden" id="dateId" />
+        <label class="field">
+          <span>日子名称</span>
+          <input type="text" id="dateTitle" maxlength="30" placeholder="比如：我们在一起的纪念日" required />
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span>日期</span>
+            <input type="date" id="dateValue" required />
+          </label>
+          <label class="field">
+            <span>类型</span>
+            <select id="dateType">
+              <option value="纪念日">纪念日</option>
+              <option value="生日">生日</option>
+              <option value="见面">见面</option>
+              <option value="其他">其他</option>
+            </select>
+          </label>
+        </div>
+        <label class="field">
+          <span>想记住的话（可选）</span>
+          <textarea id="dateNote" maxlength="120" rows="3" placeholder="比如：那天风很轻，你笑得很好看。"></textarea>
+        </label>
+        <div class="modal-actions">
+          <button class="primary-button" type="submit">保存这个日子 ♡</button>
+          <button class="ghost-button" type="button" data-close>取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- PHOTO MODAL -->
+  <div class="modal" id="photoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="photoModalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card photo-modal-card">
+      <button class="modal-close" type="button" data-close aria-label="关闭">×</button>
+      <p class="eyebrow">OUR PHOTO</p>
+      <h2 id="photoModalTitle">给这张照片写句话</h2>
+      <p class="modal-copy">照片会一直保存在你们的共享空间里，说明也可以随时改。</p>
+      <form id="photoForm">
+        <input type="hidden" id="photoId" />
+        <label class="field">
+          <span>照片说明</span>
+          <input type="text" id="photoCaption" maxlength="30" placeholder="比如：一起看过的晚霞" required />
+        </label>
+        <div class="modal-actions">
+          <button class="primary-button" type="submit">保存说明 ♡</button>
+          <button class="ghost-button" type="button" data-close>取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-bunny" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17.5 21c-3-7.5-2.5-13 1.4-13 3.3 0 4.2 7 4.3 12.2" />
+          <path d="M27 20.5c0-6.2 1.5-12 5-12 3.7 0 4.2 5.7 1.4 13" />
+          <path d="M14 27.5c0-7.4 4.6-11.8 10-11.8s10 4.4 10 11.8S29.5 40 24 40s-10-5.2-10-12.5Z" />
+          <path d="M20.3 27h.01M27.7 27h.01" />
+          <path d="M22.7 31.3c.8.9 1.8.9 2.6 0" />
+          <path d="M24 33.2v1.6" />
+        </g>
+      </symbol>
+      <symbol id="icon-bow" viewBox="0 0 64 48">
+        <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M29 24C19 10 7 14 9.5 24S19 38 29 24Z" />
+          <path d="M35 24c10-14 22-10 19.5 0S45 38 35 24Z" />
+          <path d="M29 24c-3 7-6 11-11 14M35 24c3 7 6 11 11 14" />
+          <circle cx="32" cy="24" r="4.2" />
+        </g>
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path d="M12 20.8S3.8 15.6 3.8 9.9A4.6 4.6 0 0 1 12 6.8a4.6 4.6 0 0 1 8.2 3.1c0 5.7-8.2 10.9-8.2 10.9Z" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-palette" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-.8 2-1.8 0-1.5 1-2.2 2.4-2.2H18a3 3 0 0 0 3-3.1A9 9 0 0 0 12 3Z" />
+          <circle cx="7.8" cy="10" r="1" fill="currentColor" stroke="none" />
+          <circle cx="10.4" cy="6.8" r="1" fill="currentColor" stroke="none" />
+          <circle cx="14.6" cy="7.3" r="1" fill="currentColor" stroke="none" />
+          <circle cx="16.6" cy="11" r="1" fill="currentColor" stroke="none" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
